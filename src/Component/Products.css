@@ -1,0 +1,31 @@
+.btn4{
+    margin-top: 5%;
+}
+
+.btn7{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-top: 4%;
+    margin-right: 65%;
+}
+
+.img{
+    align-content: flex-start;
+}
+
+.description{
+    margin-top: 1%;
+    margin-left: 12%;
+}
+
+.des{
+    margin-right: 39%;
+}
+
+.price{
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 16.2%;
+}
+

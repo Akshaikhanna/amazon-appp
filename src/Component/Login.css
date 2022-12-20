@@ -1,0 +1,26 @@
+*{
+  text-align: center;
+  cursor: pointer;
+}
+
+.name{
+  padding: 5px;
+  margin-left: 1%;
+}
+
+.email{
+  margin-left: 1.4%;
+  margin-top: 0.5%;
+}
+
+.password{
+  padding: 5px;
+  margin-left: 0.1%;
+}
+.btn{
+  background-color: orange;
+}
+
+.forgot-password text-right{
+  cursor: pointer;
+}
