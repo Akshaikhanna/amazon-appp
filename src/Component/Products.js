@@ -24,7 +24,7 @@ function Products() {
                   {records.price}
                 </div>
                 <div >
-                  <button className='btn7'>Buynow</button>
+                  <button className='btn7'>BuyNow</button>
                 </div>
               </div>
             )

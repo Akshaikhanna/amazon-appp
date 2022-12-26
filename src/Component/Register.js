@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import { Form, Alert } from 'react-bootstrap'
+import { Form, Alert } from 'react-bootstrap';
 import Products from './Products'
 import './Register.css'
 
 function Register() {
+  const [erroremail, setErrorEmail] = useState("");
+  const [errorpassword, setErrorPassword] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [flag, setFlag] = useState(false);
   const [products, setProducts] = useState(true);
 
@@ -14,10 +15,12 @@ function Register() {
     event.preventDefault();
     let mail = localStorage.getItem("sanskarEmail").replace(/"/g, "");
     let pass = localStorage.getItem("sanskarPassword").replace(/"/g, "");
-    if (!email || !password) {
+    if (!email && !password) {
       setFlag(true);
+
     } else if (email !== mail || password !== pass) {
       setFlag(true);
+
     } else {
       setProducts(!products)
       setFlag(false);
@@ -25,16 +28,46 @@ function Register() {
   }
 
   return (
-    <div className='Register'  >
+    <div className='Register'>
       {" "}
       {products ?
         (
           <Form onClick={handleFormSubmit}>
             <h1>Login</h1>
             <label>Email</label>
-            <input type="text" className="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="email" /><br />
+            <input type="text" className="email" value={email} onChange={(event) => {
+              setEmail(event.target.value);
+              var regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+              if (email === "") {
+                setErrorEmail("valid")
+              } else if (email === "") {
+                setErrorEmail("");
+              }else if(!regex.test(email)){
+                setErrorEmail("invalid");
+              }else{
+                setErrorEmail("");
+              }
+            }
+            }
+              placeholder="email" /><br />
+              {erroremail}<br/>
             <label>Password</label>
-            <input type="password" className="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="password" /><br />
+            
+            <input type="password" className="password" value={password} onChange={(event) => {setPassword(event.target.value);
+              var regex = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
+              if (password === "") {
+                setErrorPassword("valid")
+              } else if (password ==="") {
+                setErrorPassword("Invalid");
+              }else if(regex.test(password)) {
+                setErrorPassword("");
+              }else{
+                setErrorPassword("");
+              }
+            }
+            }
+             placeholder="password" /><br />
+             {errorpassword}<br/>
             <button className="btn3" >Login</button>
             {
               flag && (<Alert></Alert>)
@@ -47,4 +80,4 @@ function Register() {
   )
 }
 
-export default Register
+export default Register;
