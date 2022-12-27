@@ -31,10 +31,10 @@ function Sign() {
 
     }
 
-    function handleSubmit() {
-        // setRegister(!register);
+    // function handleSubmit() {
+    // setRegister(!register);
 
-    }
+    // }
     var regex = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{1,3})+$/g;
     var regexp = /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
     return (
@@ -82,9 +82,9 @@ function Sign() {
                     <br />
                     {errorp}<br />
                     <button type='submit' className='btn'>Create</button>
-                     <p onClick={handleSubmit}>
+                    {/* <p onClick={handleSubmit}>
                         Already have an{" "}Account ?
-                    </p >
+                    </p > */}
                     {
                         // flag && (<Alert></Alert>)
                     }

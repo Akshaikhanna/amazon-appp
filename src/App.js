@@ -11,9 +11,12 @@ function App() {
   return (
     <div className='App' >
      <img src={Amazon} alt='' className='img' /> 
+    
      <nav>
+      <a href='/Register'><button className='login' >Login</button></a>
       <a href='/'><button className='logout' >Logout</button></a>
      </nav>
+     
       <Routes>
         <Route path='/' element={<Sign />}/>
         <Route path='/Register' element={<Register />}/>

@@ -6,9 +6,21 @@
   margin-right: 90%;
 }
 
+.btn{
+  display: flex;
+  justify-content: end;
+  
+}
+
 .logout{
-  margin-top: -7%;
-  margin-left: 90%;
-  background-color: rgb(235, 10, 10);
+  margin-left: 5px;
+  left: 91%;
+  background-color: rgb(242, 32, 32);
   color: white;
+  
+}
+
+.login{
+  background-color: rgb(126, 126, 233);
+  margin-left: 80%;
 }
