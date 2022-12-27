@@ -2,15 +2,15 @@
     {
         "id": 1,
         "name": "Headphone",
-        "description": "boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)",
-        "price": "₹599",
+        "description": "JBL Rockerz 450 Bluetooth On Ear Headphones, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)",
+        "price": "₹1299",
         "image": "img/headphone.png"
     },
     {
         "id": 1,
         "name": "Earphone",
         "price": "₹399",
-        "descriptions": "boAt BassHeads 100 in-Ear Wired Earphones with Mic (Blue)",
-        "image": "img/Earphone.png"
+        "descriptions": "JBL BassHeads 100 in-Ear Wired Earphones with Mic (Blue)",
+        "image": "img/earphone.png"
     }
 ]

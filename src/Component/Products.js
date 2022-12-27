@@ -12,7 +12,7 @@ function Products() {
               <div className='inner' key={records.id} >
                 {records.name}
                 <div className='img'>
-                  <img src={records.image} alt="" /> <br />
+                  <img className='imgs' src={records.image} alt="" /> <br />
                 </div>
                 <div className='description'>
                   {records.description}<br />
@@ -31,7 +31,6 @@ function Products() {
           })
         }
       </div>
-      <a href='Login.js'><button className='btn4' >Logout</button></a>
     </div>
   )
 }

@@ -5,3 +5,10 @@
 .img{
   margin-right: 90%;
 }
+
+.logout{
+  margin-top: -7%;
+  margin-left: 90%;
+  background-color: rgb(235, 10, 10);
+  color: white;
+}
